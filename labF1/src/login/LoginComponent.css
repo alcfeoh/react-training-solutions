@@ -1,0 +1,10 @@
+.form, .form-signin {
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-grow: 2;
+    vertical-align: middle;
+}
+
+.input-field, .login-btn {
+	margin: 50px 0px 50px 0px;
+}
