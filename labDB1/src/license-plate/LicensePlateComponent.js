@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import './LicensePlateComponent.css';
 
-class LicensePlateComponent extends Component {
+export class LicensePlateComponent extends Component {
 	buttonClicked() {
 		alert("Plate added to cart");
 	}
-
+ 
 	render() {
 		const plate = this.props.plate ? this.props.plate : {};
 		return (
@@ -15,7 +15,7 @@ class LicensePlateComponent extends Component {
 			<p>{plate.description}</p>
 			<div>
 			<h2 className="float-left">${plate.price}</h2>
-			<button className="btn btn-primary float-right" role="button" onClick={this.buttonClicked}>
+			<button className="btn btn-primary float-right" role="button">
 				{this.props.buttonText}
 			</button>
 			</div>
@@ -23,6 +23,4 @@ class LicensePlateComponent extends Component {
 		);
 	}
 
-};
-
-export default LicensePlateComponent;
+}
