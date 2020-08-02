@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './LicensePlateComponent.css';
-const img = require("./assets/sale.png");
+const img = require("../public/sale.png");
 
-class LicensePlateComponent extends Component {
+export class LicensePlateComponent extends Component {
 	buttonClicked() {
 		alert("Plate added to cart");
 	}
-
+ 
 	render() {
 		const plate = this.props.plate ? this.props.plate : {};
 		return (
@@ -24,6 +24,4 @@ class LicensePlateComponent extends Component {
 		);
 	}
 
-};
-
-export default LicensePlateComponent;
+}
