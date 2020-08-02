@@ -1,7 +1,11 @@
 import React from "react";
 import { Redirect, Route } from "react-router-dom";
 
-export default class AuthenticatedRoute extends React.Component {
+/**
+ * Use this component to guard routes that should not be accessed without authorization.
+ * You will need to use this in conjunction with UnauthenticatedRoute.
+ */
+export class AuthenticatedRoute extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -14,7 +18,7 @@ export default class AuthenticatedRoute extends React.Component {
 		let { children, ...rest } = this.props;
 		let pathname = this.props.path; // for example, "/checkout"
 		let search = this.props.search; // for example, testing=123. Not in use.
-		let isAuthenticated = children && children.props && children.props.isAuthenticated;
+		let isAuthenticated = children?.props?.isAuthenticated;
 		const redirectUrl = search ? `/login?redirect=${pathname}${search}` : `/login?redirect=${pathname}`;
 		return (
 			<Route {...rest}>{isAuthenticated ? ( children ) : ( <Redirect to={redirectUrl} /> )}</Route>
