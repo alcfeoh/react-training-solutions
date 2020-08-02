@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import NavTemplate from './navigation/NavTemplate';
-import JumbotronTemplate from './jumbotron/JumbotronTemplate';
-import LicensePlateComponent from './LicensePlateComponent';
+import Navigation from './navigation/Navigation';
+import Jumbotron from './jumbotron/Jumbotron';
+import { LicensePlateComponent } from './license-plate/LicensePlateComponent';
 import {CALIFORNIA_PLATE, LICENSE_PLATES} from "./mock-data";
 
 class App extends React.Component {
@@ -14,10 +14,10 @@ class App extends React.Component {
 			<header className="App-header">
 			</header>
 			{/* Add Navigation here */}
-			<NavTemplate/>
+			<Navigation/>
 			<main role="main">
 			{/* Add Jumbotron here */}
-			<JumbotronTemplate title="Welcome to our store" description="Browse our collection of license plates"/>
+			<Jumbotron title="Welcome to our store" description="Browse our collection of license plates"/>
 			<div className="row" >
 			{/* Replace single license plate with list of license plates here */}
 			{LICENSE_PLATES.map((licensePlate, index) => {
