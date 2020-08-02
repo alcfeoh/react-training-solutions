@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-class Navigation extends React.Component {
+export class Navigation extends React.Component {
 	render() {
 		return (
 			<Fragment>
@@ -33,5 +33,3 @@ class Navigation extends React.Component {
 		);
 	}
 }
-
-export default Navigation;

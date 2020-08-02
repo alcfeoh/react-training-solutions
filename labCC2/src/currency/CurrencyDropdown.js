@@ -1,7 +1,7 @@
 import React from 'react';
 import './CurrencyDropdown.css';
 
-class CurrencyDropdown extends React.Component {
+export class CurrencyDropdown extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -23,5 +23,3 @@ this.setState({showItems : !this.state.showItems})
 		);
 	}
 };
-	
-export default CurrencyDropdown;

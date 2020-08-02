@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import CurrencyDropdown from '../currency/CurrencyDropdown';
+import { CurrencyDropdown } from '../currency/CurrencyDropdown';
 
-class Navigation extends React.Component {
+export class Navigation extends React.Component {
 	render() {
 		return (
 			<Fragment>
@@ -35,5 +35,3 @@ class Navigation extends React.Component {
 		);
 	}
 }
-
-export default Navigation;

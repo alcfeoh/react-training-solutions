@@ -5,7 +5,7 @@ import {addToCart} from './cart-service/cart-service';
 const img = require("./assets/sale.png");
 const currencyMap = { 'USD' : '$', 'EUR' : '€', 'GBP' : '£'};
 
-class LicensePlateComponent extends Component {
+export class LicensePlateComponent extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -33,7 +33,3 @@ class LicensePlateComponent extends Component {
 	}
 
 };
-
-
-   
-export default LicensePlateComponent;

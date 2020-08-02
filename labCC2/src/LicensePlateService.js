@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LicensePlateComponent from './LicensePlateComponent';
+import { LicensePlateComponent } from './LicensePlateComponent';
 
-class LicensePlateService extends Component {
+export class LicensePlateService extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -24,5 +24,3 @@ class LicensePlateService extends Component {
         });
     }
 }
- 
-export default LicensePlateService;

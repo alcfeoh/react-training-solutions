@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Navigation from './navigation/Navigation';
-import Jumbotron from './jumbotron/Jumbotron';
+import { Navigation } from './navigation/Navigation';
+import { Jumbotron } from './jumbotron/Jumbotron';
 import { LicensePlateService } from './LicensePlateService';
 
 class App extends React.Component {

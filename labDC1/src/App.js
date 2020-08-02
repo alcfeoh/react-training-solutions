@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import Navigation from './navigation/Navigation';
-import Jumbotron from './jumbotron/Jumbotron';
+import { Navigation } from './navigation/Navigation';
+import { Jumbotron }  from './jumbotron/Jumbotron';
 import { LicensePlateComponent } from './license-plate/LicensePlateComponent';
 import {CALIFORNIA_PLATE, LICENSE_PLATES} from "./mock-data";
 

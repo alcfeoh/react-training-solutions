@@ -2,7 +2,7 @@ import React from 'react';
 import { login } from '../authorization-service/login-service';
 import './LoginComponent.css';
 
-class LoginComponent extends React.Component {
+export class LoginComponent extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -53,5 +53,3 @@ class LoginComponent extends React.Component {
 		);
 	}
 }
-
-export default LoginComponent;
