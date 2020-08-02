@@ -15,7 +15,7 @@ export class LicensePlateComponent extends Component {
 			<p>{plate.description}</p>
 			<div>
 			<h2 className="float-left">${plate.price}</h2>
-			<button className="btn btn-primary float-right" role="button">
+			<button className="btn btn-primary float-right" role="button" onClick={this.buttonClicked}>
 				{this.props.buttonText}
 			</button>
 			</div>
