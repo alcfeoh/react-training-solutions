@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-class JumbotronTemplate extends React.Component {
+class Jumbotron extends React.Component {
 	render() {
 		return (
 			<Fragment>
@@ -15,4 +15,4 @@ class JumbotronTemplate extends React.Component {
 	}
 };
 	
-export default JumbotronTemplate;
+export default Jumbotron;

@@ -1,20 +1,21 @@
 import React from 'react';
 import './App.css';
-
-import NavTemplate from './navigation/NavTemplate';
-import JumbotronTemplate from './jumbotron/JumbotronTemplate';
+import Navigation from './navigation/Navigation';
+import Jumbotron from './jumbotron/Jumbotron';
 
 class App extends React.Component {
-	render() {
+    render() {
 		return (
-			<div className="App">
-			<header className="App-header">
-			</header>
-			{/* Add Navigation here */}
-			<NavTemplate/>
-			{/* Add Jumbotron here */}
-			<JumbotronTemplate title="Welcome to our store" description="Browse our collection of license plates"/>
-			</div>
+            <div className="App">
+            <header className="App-header">
+            </header>
+            {/* Add Navigation here */}
+            <Navigation/>
+		<main role="main">
+            {/* Add Jumbotron here */}
+            <Jumbotron title="Welcome to our store" description="Browse our collection of license plates"/>
+		</main>
+            </div>
 		);
 	}
 };
