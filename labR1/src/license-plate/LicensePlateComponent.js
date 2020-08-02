@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 import './LicensePlateComponent.css';
-
-const img = require("./assets/sale.png");
+import {addToCart} from '../cart-service/cart-service';
+const img = require("../public/sale.png");
 const currencyMap = { 'USD' : '$', 'EUR' : '€', 'GBP' : '£'};
 
-class LicensePlateComponent extends Component {
-	constructor(props) {
+export class LicensePlateComponent extends Component {
+    constructor(props) {
 		super(props);
 	}
-
 	render() {
 		const plate = this.props.plate ? this.props.plate : {};
-		const currency = this.props.currency ? this.props.currency : '$';
+        const currency = this.props.currency ? this.props.currency : '$';
+
 		return (
 			<>
 			<h2>{plate.title} {(plate.onSale) ? <img src={img} /> : ''}</h2>
@@ -20,13 +20,11 @@ class LicensePlateComponent extends Component {
 			<div>
 			<h2 className="float-left">{currencyMap[currency]}{plate.price}</h2>
 			<button className="btn btn-primary float-right" role="button" onClick={() => this.props.buttonClicked(plate)}>
-				{this.props.buttonText}
+               {this.props.buttonText}
 			</button>
 			</div>
 			</>
 		);
 	}
 
-};
-
-export default LicensePlateComponent;
+}
