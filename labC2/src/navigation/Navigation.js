@@ -1,9 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 export class Navigation extends React.Component {
 	render() {
 		return (
-			<Fragment>
 			<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 				<a className="navbar-brand" href="#">License Plate Store</a>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +28,6 @@ export class Navigation extends React.Component {
 					</form>
 				</div>
 			</nav>
-			</Fragment>
 		);
 	}
-}
+};
